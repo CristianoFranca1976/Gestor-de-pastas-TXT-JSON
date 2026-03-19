@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-image: url(/assets/image/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.painel {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.13);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+button {
+  cursor: pointer;
+  padding: 8px 12px;
+  margin: 5px 5px 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+#btnCriarTxt {
+  background-color: #e1f5fe;
+}
+#inputTxt {
+  width: 70%;
+}
+#btnGravarTxt {
+  background-color: #c8e6c9;
+}
+#btnGravarJson {
+  background-color: #fff3e0;
+}
+#sonMensagem {
+  width: 50%;
+}
+#btnGravarJson {
+  background-color: #c8e6c9;
+}
+input {
+  padding: 8px;
+  border: 1px solid #0f0f0f;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  background-color: transparent;
+  outline: 1px solid rgb(250, 233, 3);
+}
+.status {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+pre {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  max-height: 150px;
+  overflow: auto;
+}
+h2 {
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+span {
+  color: red;
+}

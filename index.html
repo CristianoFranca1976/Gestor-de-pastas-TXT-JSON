@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cristiano Franca" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Web site voltado para a criacao e salvamento de textos outros">
+    <link rel="stylesheet" href="style.css">
+    <title>Gestor de Ficheiros TXT e JSON<</title>
+  </head>
+  <body>
+    <!-- SECÇÃO TXT -->
+    <div class="painel">
+        <h2>1. Registos em Texto (.txt)</h2>
+        <strong>Ficheiro:</strong><br>
+        <button type="button" id="btnCriarTxt" >+ Criar Novo TXT</button>
+        <button type="button" id="btnAbrirTxt">📂 Abrir TXT</button>
+        <p>Estado: <span id="statusTxt">Desconectado</span></p>
+        
+        <hr>
+        <strong>Gravar Linha:</strong><br>
+        <input type="text" id="inputTxt" placeholder="Escreve uma linha...">
+        <button type="button" id="btnGravarTxt" disabled>💾 Gravar</button>
+    </div>
+
+    <!-- SECÇÃO JSON -->
+    <div class="painel">
+        <h2>2. Base de Dados (.json)</h2>
+        <strong>Ficheiro:</strong><br>
+        <button type="button" id="btnCriarJson">+ Criar Novo JSON</button>
+        <button type="button" id="btnAbrirJson">📂 Abrir JSON</button>
+        <p>Estado: <span id="statusJson">Desconectado</span></p>
+
+        <hr>
+        <strong>Novo Objeto JSON:</strong><br>
+        <input type="text" id="jsonCategoria" placeholder="Categoria (ex: Info)">
+        <input type="text" id="jsonMensagem" placeholder="Mensagem...">
+        <button type="button" id="btnGravarJson" disabled>💾 Adicionar Objeto</button>
+        
+        <p>Conteúdo do JSON:</p>
+        <pre id="previewJson">[]</pre>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
